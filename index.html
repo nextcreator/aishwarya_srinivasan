@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PAGE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap');
+
+        body{
+            margin: 5%;
+            padding: 5%;
+            background: url(./static/desktop.jpg) no-repeat;
+            background-size: cover;
+        }
+        .box{
+            width: 450px;
+            background: orange;
+            padding: 40px;
+            color: seashell;
+            text-align: center;
+            margin: auto;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            letter-spacing: 3%;
+            
+        }
+
+        .boximg{
+            width: 300px;
+            height: 400px;
+            border-radius: 50%;
+        }
+        .box h1{
+            /* letter-spacing: 5px; */
+            font-weight: 100;
+            font-size: 40px;
+        }
+        .box h5{
+            font-size: 25px;
+            letter-spacing: 5px;
+            font-weight: 100;
+        }
+        .box p{
+            text-align: justify;
+            font-family: 'Domine', serif;
+            font-size: 20px;
+        }
+        nav{
+            background-color: mistyrose;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: x-large;
+            text-align: center;
+            text-align: center;
+            height: 100px;
+            padding: auto;
+            margin: auto;
+        
+        }
+
+        nav > ul{
+            color: black;
+            list-style-type: none;
+            border: peru 5px solid;
+            height: 90px;
+            padding: auto;
+            margin: auto;
+        }
+
+        nav > ul > li{
+            display: inline;
+            padding: 3%;
+            padding-left: 2%;
+            padding-right: 4%;
+        }
+
+        nav > ul > li > a{
+            text-decoration: none;
+            color: darkred;
+            font-size: 100%;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+
+
+        .btn:hover{
+            color: burlywood;
+            background-color: cadetblue;
+            font-style: italic;
+            /* padding: 5px; */
+        }
+
+        .btn{
+            background-color: lightgoldenrodyellow;
+            /* color: black;
+            font-family: 'Times New Roman', Times,  serif; */
+            color: darkred;
+            font-size: 100%;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+            /* border: black;
+            border-style: solid;
+            border-width: 10%; */
+            border: none;
+        }
+
+        .dropdowncontent{
+                display: none;
+                position: absolute;
+                background-color: darkturquoise;
+                /* z-index: 1; */
+                min-width: 160px;
+        }
+
+        .dropdowncontent a:hover{
+            background-color: darkgray;
+        }
+
+        .dropdowncontent a{
+            text-decoration: none;
+            color: lightgoldenrodyellow;
+            display: block;
+            padding: 10px;
+            font-size: 20px;
+        }
+        
+        .dropdown:hover .dropdowncontent{ display: block;}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./solarsytsem.html">Solar System</a></li>
+            <div class="dropdown">
+                <button class="btn">Projects</button>
+                <div class="dropdowncontent">
+                <a href="./blog.html">Blog</a>
+                <a href="./english.html">Carpentry</a>
+                <a href="./poem.html">Ballad</a>
+                <a href="./matilda.html">Matilda</a>
+               
+                <a href="./recipe.html">Reciepe</a>
+                </div> 
+            </div>
+            <li><a href="./da vinci.html">Leonardo Da Vinci</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+    <div class="box">
+        <img src="./static/intro1.jpg" alt="" class="boximg">
+        <h1>ABOUT ME</h1>
+        <h5>AISHWARYA SRINIVASAN</h5>
+        <p>
+            An exceptionally talented yet an impatient artist and a liberal daydreamer. loyal, analytical, insightful and critical, I can sometimes be sensitive with an impecabble need for overthinking everything. I am Aishwarya and in this website, you can explore  my projects and learn new things! So enjoy!  
+        </p>
+       
+    </div>
+</body>
+</html>

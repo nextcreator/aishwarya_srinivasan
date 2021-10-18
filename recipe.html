@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECIEPE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+
+        body{
+            background: url(./static/photo-1487147264018-f937fba0c817.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 5%;
+            margin: 5%;
+        }
+        .container h1{
+            font-family: 'Londrina Solid', cursive;
+            font-size: 200px;   
+            letter-spacing: 5px;
+            font-weight: 900px;
+            text-align: center;
+            color: crimson;
+        }
+        .image{
+            display: block;
+            text-align: center;
+        }
+        ol > li{
+            text-align: justify;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        h3{
+            text-align: justify;
+            font-size: 60px;
+            font-family: 'Times New Roman', Times, serif;
+            color: darkblue;
+        }
+        .bread{
+            text-align: justify;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .note{
+            text-align: justify;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            border:red;
+            border-radius: 12px;
+            border-width: 20px;
+            border-style: solid;
+            text-decoration: none;
+            background-color: lightpink;
+            padding: 10%;
+        }
+        nav{
+            background-color: mistyrose;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: x-large;
+            text-align: center;
+            text-align: center;
+            height: 100px;
+            padding: auto;
+            margin: auto;
+        
+        }
+
+        nav > ul{
+            color: black;
+            list-style-type: none;
+            border: peru 5px solid;
+            height: 90px;
+            padding: auto;
+            margin: auto;
+        }
+
+        nav > ul > li{
+            display: inline;
+            padding: 3%;
+            padding-left: 2%;
+            padding-right: 4%;
+        }
+
+        nav > ul > li > a{
+            text-decoration: none;
+            color: darkred;
+            font-size: 100%;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+
+
+        .btn:hover{
+            color: burlywood;
+            background-color: cadetblue;
+            font-style: italic;
+            /* padding: 5px; */
+        }
+
+        .btn{
+            background-color: lightgoldenrodyellow;
+            /* color: black;
+            font-family: 'Times New Roman', Times,  serif; */
+            color: darkred;
+            font-size: 100%;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+            /* border: black;
+            border-style: solid;
+            border-width: 10%; */
+            border: none;
+        }
+
+        .dropdowncontent{
+                display: none;
+                position: absolute;
+                background-color: darkturquoise;
+                /* z-index: 1; */
+                min-width: 160px;
+        }
+
+        .dropdowncontent a:hover{
+            background-color: darkgray;
+        }
+
+        .dropdowncontent a{
+            text-decoration: none;
+            color: lightgoldenrodyellow;
+            display: block;
+            padding: 10px;
+            font-size: 20px;
+        }
+        
+        .dropdown:hover .dropdowncontent{ display: block;}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./solarsytsem.html">Solar System</a></li>
+            <div class="dropdown">
+                <button class="btn">Projects</button>
+                <div class="dropdowncontent">
+                <a href="./blog.html">Blog</a>
+                <a href="./english.html">Carpentry</a>
+                <!-- <a href="./hp.htm">Harry Potter</a> -->
+                <a href="./matilda.html">Matilda</a>
+               <a href="./poem.html">Ballad</a>
+                <a href="./recipe.html">Reciepe</a>
+                </div> 
+            </div>
+            <li><a href="./da vinci.html">Leonardo Da Vinci</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>BAGUETTE PIZZAS</h1>
+        
+        <h1>Ingredients</h1>
+        <div class="bread">
+            1 baguette, sliced in half crosswise and lengthwise (4 pieces in total)
+        </div>
+        <h3>Margherita Pizza Toppings</h3>
+        <ol>
+            <li>1 cup tomato sauce</li>
+            <li>3/4 shredded mozzarella</li>
+            <li>Halved cherry tomatoes</li>
+            <li>Mozzarella balls</li>
+            <li>1 tablespoon chopped fresh basil(optional) </li>
+            <li>1/2 teaspoon red pepper flakes(optional)</li>
+        </ol>
+        <h3>BBQ Chicken Pizza Toppings</h3>
+        <ol>
+            <li>1 cup BBQ sauce</li>
+            <li>1 cup shredded rotisserie chicken </li>
+            <li>3/4 cup shredded mozzarella </li>
+            <li>1/2 medium red onion, sliced</li>
+            <li>2 tablespoons sliced green onion(optional)</li>
+        </ol>
+        <br>
+
+        <h1>Directions</h1>
+        <ol>
+            <li>Preheat the oven to 350 degree Farenheit (180 degree celsius) and line 2 baking sheets and parchment paper.      </li>
+            <li>Arrange the baguette pieces on the baking sheet, cut side up.   </li>
+            <li>To make the margherita pizzas, spread 2 baguette pieces with the tomato sauce and top with the shredded mozzarella, cherry tomatoes, mozzarella balls and basil.</li>
+            <li>To make the BBQ chicken pizzas, spread 2 baguette pieces with the BBQ sauce and top with the shredded chicken, shredded mozzarella and red onion.</li>
+            <li>Bake until the cheese is browned and bubbling, about 10 minutes.</li>
+            <li>If using, garnish the margherita pizza with chopped basil and red pepper flakes and the BBQ chichken pizzas with green onions. </li>
+            <li>Enjoy!</li>
+        </ol>
+        <div class="image">
+            <img src="./static/bistrobaguette-11.jpg"alt="" height="50%" width="50%">
+        </div>
+        <h1>NOTE</h1>
+        <div class="note">
+            This recipe makes 2 margherita pizzas and 2 BBQ chicken pizzas, but feel free to mix, match and set out ingredients to custosmize according to your taste. 
+            <br><br>
+            Vegan/vegetarian substituion: Omit the chicken and substitue the shredded mozzarella with your favourite vegan cheese alternative. 
+        </div>
+    </div>
+</body>
+</html>

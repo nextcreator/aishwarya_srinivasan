@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leornado da Vinci</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap' ); @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap' ); @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+        body{
+            /* background-color: white; */
+            background-position: center;
+            /* background-size: cover; */
+            margin: 10%;
+            padding: 5px;
+        }
+        .heading{
+            text-align: left;
+            font-size: 15px;
+            font-family: cursive;
+            text-shadow: 20px;
+            /* border: black dotted; */
+            /* border-radius: 10px; */
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: darkblue;
+        }
+        h2{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .intro{
+            /* border-style: double; */
+            /* border-spacing: 5px; */
+            /* border-radius: 20px; */
+            /* border-color:red ; */
+            /* border: solid red 10px ; */
+            text-align: justify;
+            font-size: x-large;
+            /* font-family: 'Times New Roman', Times, serif; */
+            font-family: 'Roboto Slab', serif;
+            padding: 5%;
+            /* border-width: 15px; */
+        }
+        .title{
+            text-align: left;
+            /* font-size: 50%; */
+        }
+        .cl{
+            text-align: center;
+            font-size: 100px;
+        }
+        .img{
+            width: 50%;
+            height: 50%;
+                        /* border: black solid 5px; */
+            /* display: block; */
+            /* text-align: center; */
+            float: left;
+            padding-right: 2%;
+            padding-bottom: 2%;
+            text-align: center;
+            /* border: black solid 2px; */
+     
+        }
+
+    
+        .correct{
+            text-align: left;
+            display: block;
+        }
+        .img2{
+            display: block;
+            text-align: left;
+        }
+       
+        .content{
+            text-align: justify;
+            font-size: 50px;
+            font-family: 'Ephesis', cursive;
+            /* border: solid red 10px ; */
+            padding: 5%;
+           /* position: relative;
+           left: 80px;
+           top: 2px;
+           nav-up: inherit; */
+        }
+        /* .experiment{
+            display: grid;
+            grid-template-columns: min-content 1fr;
+        } */
+        .monalisa{
+            width: 50%;
+            height: 50%;
+            float: right;
+            padding-left: 10%;
+        }
+        .intro2{
+              /* border-style: double; */
+            /* border-spacing: 5px; */
+            /* border-radius: 20px; */
+            /* border-color:red ; */
+            /* border: solid red 10px ; */
+            text-align: justify;
+            font-size: x-large;
+            /* font-family: 'Times New Roman', Times, serif; */
+            font-family: 'Roboto Slab', serif;
+            padding: 5%;
+            /* border-width: 15px; */
+
+        }
+        .dad{
+            display: block;
+            text-align: center;
+        }
+        .img3{
+            width: 50%;
+            height: 50%;
+        }
+        /* .notebook{
+            float: right;
+            width: 40%;
+            height: 40%;
+            padding: 10%;
+        } */
+        .book{
+            float: left;
+            font-size: 50px;
+            text-align: justify;
+            font-family: 'Lobster', cursive;
+        }
+        .quote{
+            text-align: justify;
+            font-size: 50px;
+            /* font-family: 'Permanent Marker', cursive; */
+            font-family: 'Luckiest Guy', cursive;
+            border: lightsalmon;
+            border-style: solid;
+            border-width: 50px;
+            padding: 5%;
+        }
+        .cap{
+            text-align: center;
+            font-size: 16px;
+        }
+        .heart{
+            text-align: justify;
+            font-size: 40px;
+            font-family: 'Playball', cursive;
+        }
+        .content2{
+            text-align: left;
+            font-size: 50px;
+            /* padding: 50%; */
+            /* font-family: 'Ephesis', cursive; */
+            font-family: 'Black Ops One', cursive;
+            /* border: solid red 10px ; */
+            padding: 5%;
+           /* position: relative;
+           left: 80px;
+           top: 2px;
+           nav-up: inherit; */
+        } 
+        .monalisa2{
+            width: 40%;
+            height:40%;
+            float: left;
+            /* padding-left: 10%; */
+            padding-right: 3%;
+        } 
+        .inventor{
+            font-family: 'Marck Script', cursive;
+            text-align: justify;
+            font-size: 50px;
+        }
+
+        .inevntion{
+            border: chocolate;
+            border-style: inset;
+            border-width: 30px;
+            padding: 5%;
+        }
+        .list{
+            font-family: 'Marck Script', cursive;
+            text-align: justify;
+            font-size: 50px;
+        }
+       .monalisa3{
+        width: 40%;
+         height:40%;
+         float: left;
+         /* padding-left: 10%; */
+         padding-right: 4%;
+         padding-top: 3%;
+         padding-bottom: 3%;
+         display: grid;
+       }
+       .war{
+        font-family: 'Marck Script', cursive;
+            text-align: justify;
+            font-size: 50px;
+       }
+       .monalisa4{
+        width: 60%;
+         height:50%;
+         float: left;
+         /* padding-left: 10%; */
+         padding-right: 4%;
+         padding-top: 3%;
+         padding-bottom: 3%;
+         display: grid;
+       }
+       .universal{
+        font-family: 'Inconsolata', monospace;
+        font-size: 50px;
+        text-align: justify;
+       }
+       .table{
+           border: burlywood;
+           border-style: solid;
+           border-width: 50px;
+           font-family: 'Roboto Slab', serif;
+           font-size: 30px;
+           padding: 5%;
+           text-align: justify;
+       }
+       .facts{
+        font-family: 'IM Fell English SC', serif;
+        font-size: 50px;
+       }
+       nav{
+            background-color: mistyrose;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: x-large;
+            text-align: center;
+            text-align: center;
+            height: 100px;
+            padding: auto;
+            margin: auto;
+        
+        }
+
+        nav > ul{
+            color: black;
+            list-style-type: none;
+            border: peru 5px solid;
+            height: 90px;
+            padding: auto;
+            margin: auto;
+        }
+
+        nav > ul > li{
+            display: inline;
+            padding: 3%;
+            padding-left: 2%;
+            padding-right: 4%;
+        }
+
+        nav > ul > li > a{
+            text-decoration: none;
+            color: darkred;
+            font-size: 100%;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+
+
+        .btn:hover{
+            color: burlywood;
+            background-color: cadetblue;
+            font-style: italic;
+            /* padding: 5px; */
+        }
+
+        .btn{
+            background-color: lightgoldenrodyellow;
+            /* color: black;
+            font-family: 'Times New Roman', Times,  serif; */
+            color: darkred;
+            font-size: 100%;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+            /* border: black;
+            border-style: solid;
+            border-width: 10%; */
+            border: none;
+        }
+
+        .dropdowncontent{
+                display: none;
+                position: absolute;
+                background-color: darkturquoise;
+                /* z-index: 1; */
+                min-width: 160px;
+        }
+
+        .dropdowncontent a:hover{
+            background-color: darkgray;
+        }
+
+        .dropdowncontent a{
+            text-decoration: none;
+            color: lightgoldenrodyellow;
+            display: block;
+            padding: 10px;
+            font-size: 20px;
+        }
+        
+        .dropdown:hover .dropdowncontent{ display: block;}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./solarsytsem.html">Solar System</a></li>
+            <div class="dropdown">
+                <button class="btn">Projects</button>
+                <div class="dropdowncontent">
+                <a href="./blog.html">Blog</a>
+                <a href="./english.html">Carpentry</a>
+                <a href="./poem.html">Ballad</a>
+                <!-- <a href="./hp.htm">Harry Potter</a> -->
+                <a href="./matilda.html">Matilda</a>
+               
+                <a href="./recipe.html">Reciepe</a>
+                </div> 
+            </div>
+            <li><a href="./da vinci.html">Leonardo Da Vinci</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+    <div class="cl">
+        <p title="heading">LEONARDO DA VINCI</p>
+    </div>
+    <div class="heading">
+    <!-- <h1>The man who changed the world</h1> -->
+        </div>
+    <h1 title="text">WIDELY CONSIDERED AN ARCHETYPE OF THE "RENAISSANCE MAN" 
+ <h2 title="subtext">He was a man whose curiosity was equalled by his intelligence and talent.</h2></h1>
+<br><br>
+ <div class="table">
+     <ol>
+         <h1>TABLE OF CONTENTS</h1>
+         <li>Introduction</li>
+         <li>Leonardo Da Vinci</li>
+         <ul style="list-style-type: lower-roman;">
+             <li>How to think like Da Vinci</li>
+         </ul>
+         <li>Master of Arts </li>
+         <li>The Anatomical Artist</li>
+         <li>The Heart matters</li>
+         <li>An Incredible Inventor</li>
+         <ul style="list-style-type: lower-alpha;">
+             <li>Inventions for flight</li>
+             <ul style="list-style-type: lower-roman;">
+                 <li>The Helicopter</li>
+                 <li>The Glider</li>
+                 <li>The Parachute</li>
+                 <li>The Landing Gear</li>
+             </ul>
+             <li>Inventions for War</li>
+             <ul style="list-style-type: lower-roman;">
+                 <li>The Tank</li>
+                 <li>The Crossbow</li>
+                 <li>The Machine Gun</li>
+             </ul>
+             <li>Architectural Inventions</li>
+             <ul style="list-style-type: lower-roman;">
+                 <li>The Ideal City</li>
+                 <li>The Robotic Knight</li>
+                 <li>The Propelled Cart</li>
+             </ul>
+         </ul>
+         <li>The Universal Man</li>
+         <li>Quick Facts</li>
+     </ol>
+
+ </div>
+
+
+ <div class="intro">
+     <div class="title">
+         <h1 title="intro">INTRODUCTION</h1>
+         <br>
+     </div>
+ <p title="about leonardo da vinci">
+    <figure>
+        <div class="correct">
+        <img class="img" src="./static/da vinci.jpg" alt="leonardo da vinci" title="Leonardo da Vinci">
+    </figure>
+    <h2>THE MAN WHO CHANGED THE WORLD</h2>
+     Jack of all trade, master of.... all trades. He was a painter, sculptor, architect, musician, scienctist, mathematician, engineer, inventor, anatomist, geologist, cartographer, botanist, and writer. His friencds described him to have extraordinary powers of invention, incredible strength and generosity, boundless, grace, an infinite mind, a majestic spirit, and in addition to all that. he was quite the looker. In his time, a person of such vast skill and personality was considered to be a polymath and ammased by many friends. </p>
+ <p>
+     Lesser known for his ground-breaking understanding of the human body. Over the years, he found himself particualry apt at recognizing illness as well as a being's emotions-rage being a speciality. He was often considered the archetypal Renaissance man: as the great British art historian Kenneth Clark put it, he was the most relentessely curious person in the history. 
+ </p>
+ <p>    
+     Many claim he was the smartest man to ever live- a true genius- while others claim he was the most talented to ever live ... either way, one thing's for sure: he was one of a kind. 
+ </p>
+</div>
+</div>
+<br>
+<!-- <div class="experiment"> -->
+    <div class="img2">
+    <figure>
+        <img class="monalisa" src="./static/Capture.JPG" alt="mona lisa" title="Mona Lisa, also called Portrait of Lisa Gherardini, wife of Francesco del Giocondo, Italian La Gioconda, or French La Joconde, oil painting on a poplar wood panel by Leonardo da Vinci, probably the world’s most famous painting. It was painted sometime between 1503 and 1519, when Leonardo was living in Florence, and it now hangs in the Louvre Museum, Paris, where it remained an object of pilgrimage in the 21st century. ">
+    </figure>
+</div>
+    <div class="content">
+        <p>Genius is made, not born.Human beings are gifted with an almost unlimited potential for learning and creativity. Uncover your own hidden abilities, and liberate your unique intelligence- by following the example of the genius of all time, 
+            Leonardo Da Vinci
+        </p>
+    </div>
+</div>
+</div>
+
+<div class="intro2">
+<h1 title="heading">LEONARDO DA VINCI</h1>
+<h2 title="subtitle">A curious child in Vinci</h2>
+<p>Leonardo da Vinci was born on 15th april 1452, near the village of Vinci about 25 miles west of Florence, Italy. He was the son of Ser Piero Da vinci, a prominent notary of Florence, and a local woman, Caterina. </p>
+<div class="dad">
+    <figure >
+        <img src="./static/house.JPG" alt="da vinci's house">
+        <figcaption>Vinci, Province of Florence</figcaption>
+    </figure>
+</div>
+<p>
+
+    As a baby, Leonardo stayeed with mother. When he was almost two years old he was taken from her home and rasied on his father's estate. His dad was often away on buisness, travelling to neighbouring towns and he eventually setteled in the city of Florence. it was decided that Leonardo would remain in Vinci, and he was raised by his grandparents and his uncle Francesco.  
+</p>
+<div class="dad">
+    <figure>
+        <img class="img3" src="./static/Piero_di_Antonio_da_Vinci_.jpg" alt="Leornado's dad" title="Leonardo Da Vinci was properly named Leonardo di ser Piero da Vinci">
+        <figcaption>Leonardo Ser Piero Da vinci</figcaption>
+    </figure>
+</div>
+<p>
+    Uncle Francesco was only sixteen years older thatn Leonardo. Though he was young, he ran the family estate. He supervised the work on the fields, where they raised olives, grapes, and wheat. As the boy and his uncle tramped through the vineyards and fields, Francesco taught Leornardo the names and uses of plants and herbs, the signs of approaching weather, and the habits of the wild animals who loved in the hills around Vinci. Francesco never tired of the curious boy's constant questions. 
+</p>
+<p>
+    Leonardo never recieved any kind of formal eductaion. He did, however, recieve instruction at home in subjects such as reading, writing, and mathematics. His artistic talents were evident from an early age. Growing up in rural Tuscany, Leonardo spent much of his time outdoors, where he marvelled at the natural world. In his journals, he noted taht one of his earliest was of dream in which a bird of prey landed on his face and pushed his tail feathers between his lips. Leonardo would go to study such birds, convinced that if he coud understand the mechanics of their flight, he could design a machine that would allow humans to fly. 
+</p>
+</div>
+<h1>HOW TO THINK LIKE DA VINCI</h1>
+<figure>
+    <img class="monalisa" src="./static/Capture2.JPG" alt="drawing" >
+    </figure>
+<div class="content">
+    <p>
+        Fill your notebook with questions, observations, contemplations, notes, pictures, drawings. Covering as many topics as you can.
+         Despite mistakes, disasters and failures and disappointments, Leonardo never stopped learning, exploring and experimenting.
+    </p>
+</div>
+<br><br><br>
+<div class="intro">
+    <h1>MASTER OF THE ARTS</h1>
+    <p>Leonardo's simple life in the country came to an end after his grandfather died and his uncle Francesco married. His family decided he didn't belong in the Vinci anymore and they agreed he should move in with his father and his new wife. The fourteen-year-old packed his belongings and left the countryside for the city of Florence. </p>
+    <p>
+        
+It was at this stage That his father noticed Leonardo had unsual artistic talents and decided to send him to the most sought after Florentine master of the time- Andrea del Verrochio. Young Leonardo was thus apprenticed to the great artist.
+<div class="dad">
+    <figure>
+        <img class="img3" src="./static/image6-16.jpg" alt="teacher">
+        <figcaption>Andrea del Verrochio</figcaption>
+    </figure>
+    </div> 
+<p>
+    Those years flew by. Leornado grew up to be a handosme and stong young man. Leonardo stayed on as an assistant in Verrochio's shop, and his earliest painitng iis a product of his collaboration with his masther. 
+    <p>
+        The artists in Florence developed techniques to potray objects and poeple having depth and as living in space. Leonardo learned to carefully calculate the placement of lines in his drawings and paintings to create this illusion of perspective. He used math and geometry to crete his art. Leonardo spent many hours studying the frescoes and shrines and statues of Florence. He also sought out teachers in the fields of science, mathematics and philosophy. 
+    </p>
+</p>
+    </p>
+</div>
+<div class="quote" >
+    <p>
+        Leonardo Da Vinci carried a notbook with him at all times so that he could jot down ideas, impressions, and observations as they occured. He was too busy searching for truth and beauty. 
+    </p>
+</div>
+<br><br>
+<div class="intro">
+    <h1>THE ANATOMICAL ARTIST</h1>
+    <p>He may be renowned for masterpieces such as the Mona Lisa and the Last Supper. But Leonardo is also one of the greatest anatomists the world has seen.</p>
+    <p>
+        "A good painter has two chief objects to paint- man and his intentions of his soul", Da Vinci wrote. "The former is easy, the latter hard, for it must be expressed by gestures and the movement of the limbs." To more accurately depict those gestures and movements, da Vinci began to seriously study anatomy and dissect human body and animal bodies.
+    </p>
+    <p>
+        Between 1507 and 1513 he dissected more than 30 human corpses, including that of a 100-year-old man.
+        <div class="dad">
+            <figure>
+                <img class="human" src="./static/humna.jpg" alt="da vinci's notebook">
+             <figcaption class="cap">The notebooks, which date between 1450 and 1519, contain incredibly detailed images of the human body.</figcaption>
+            </figure>
+        </div>
+    </p>
+    <p>
+        His intricate knowledge of the human body, which was years ahead of his time, is demonstrated in a collection of notebooks which he filled with detailed studies of organs, bones, vessels and muscles using new illustatrative techniques. The anatomical drawings show he was more than a match for today's medical technology. 
+
+       
+    </p>
+</div>
+<div class="quote">
+    <p>HIS SKETCHES OF MUSCLES AND SKELETONS FORESHADOW MODERN TECHNIQUES, SUCH AS MRI SCANS AND 3D MODELLING, TO "AN ASTONISHED DEGREE"</p>
+</div>
+  <br><br>
+<div class="heart">
+<h1>THE HEART MATTERS</h1>
+<p>
+    But it was the heart that appeared to particularly fire his interest, from 1507 onwards, when he had reached his 50's. In those drawings, he used his knowledge of fuids, weights, levers and engineering to try to undertand how the heart functions. 
+</p>
+<p>
+    He also looked closely at the actins of the heart valves and flow of blood through them. Many of Leonardo's conclusins, such as the description of how the arterial valves close and open- letting blood flow around the herat- holds true today, but is widely not known. Contempoprary dissections of the heart show he was correct on many aspects of its functioning. 
+</p>
+<p>
+    Many professors of anatomy say they still use Da Vinci's drawings to teach medical students as the accuracy of his work has rarely been surpassed. 
+    
+</p>
+</div>
+<div class="dad">
+    <img class="human" src="./static/heart.JPG" alt="heart">
+    <figcaption class="cap">Leonardo's insights could have made a huge difference if they had been made public earlier.</figcaption>
+</div>
+
+
+
+<br><br><br><br>
+
+<figure>
+    <img class="monalisa2" src="./static/ermine.JPG" alt="lady with an ermine">
+</figure>
+<div class="content2">
+    <p>
+        Leonardo's legacy is that we should follow the Renaissance man's example and continue to challenge, question and enquire.
+    </p>
+    <br><br>
+</div>
+<div class="inventor">
+    <h1>AN INCREDIBLE INVENTOR</h1>
+    <p>
+        An incredible inventor of all time! Besides being a brilliant artist, Da Vinci was also a scientist, engineer and inventor and a hell of a good one which his incredible inventions clearly indicate. His most fascinating inventions are listed below. Let's look at some of the most imaginative and coolest of the designs that Leonardo sketched out in his notebook:
+        <ol>
+            <li>Inventions for flight</li>
+            <li>Inventions for war</li>
+            <li>Architectural Inventions</li>
+        </ol>
+        <div class="dad">
+            <iframe width="900" height="506" src="https://www.youtube.com/embed/aYATCavD_IU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        <div class="facts">
+        </div>
+    </p>
+    <div class="inevntion">
+<h1>INVENTIONS FOR FLIGHT</h1>
+<p>
+    He was fascinated by the flight of bats and birds and had hundredes of pages showing the motion of their wings whlist in a flight. We can see a clear parallel between the bird and bat wings he drew and his designs for flying machine.  
+</p>
+</div>
+<br>
+
+<figure>
+    <img class="monalisa3" src="./static/helicopter.jpg" alt="helicopter">
+</figure>
+<div class="list">
+    <h1>THE HELICOPTER</h1>
+    <p>
+        Leonardo da Vicni's helicopter is a world renowned example of ability to think centuries ahead of his time. It is the first time known drawing of any helicopter-like machine. The design was drawn in 1493, 450 years earlier than an actual helicopter would take to the air.
+    </p>
+</div>
+
+<figure>
+    <img class="monalisa3" src="./static/flyingmachine4_l.jpg" alt="glider">
+</figure>
+<div class="list">
+    <h1>THE GLIDER</h1>
+    <p>In this image of glider, you can almost see his train of thought, this image shows an outstretched bat's with its proportions noted. He would often buy birds in local markets and study their wing structure, motion and shape, after studying he would set them free. 
+    </p>
+</div>
+
+<figure>
+    <img class="monalisa3" src="./static/parachute.jpg" alt="parachute">
+</figure>
+<div class="list">
+    <h1>THE PARACHUTE</h1>
+    <p>Forever fascinated by the possibility of flight, Da Vinci spent much of his time thinking up wasy to get mankimd in the air and perhaps more importantly, how to get them back down safely. Eventually, he came up with the first-ever parachute; a wooden pyramid strature draped with a piece of cloth that would slow down a person's terminal velocity as tehy fell to earth.
+    </p>
+    <p>
+        However, Leonardo's parachute was way more sophisticated and in 2000, the British skydiver Adrian Nicholas proved that it works by jumping with a parachute built according to the Leonardo's skectches. 
+    </p>
+</div>
+
+<figure>
+    <img class="monalisa3" src="./static/activity.jpg" alt="The landing gear">
+</figure>
+<div class="list">
+    <h1>THE LANDING GEAR</h1>
+   <p>
+       While he was designing and contemplating his flying machines he realised teh simple rule- "what goes up, must come down. What he came up with was a way to safely land back on solid earth is quite extraordinary- retractable landing gear.
+   </p>
+</div>
+</div>
+</div>
+<div class="inevntion">
+    <div class="war">
+    <h1>INVENTIONS FOR WAR</h1>
+
+    <p>During Leonardo’s lifetime Italy was comprised of several independent city states, each of whom was trying to overtake the others land and power. As a result, whichever state had a technological/military advantage over the other states was holding the trump card. Who could you turn to to invent some of the most destructive machines ever designed?  Leonardo da Vinci.</p>
+    <p>
+        One of his most fearsome and bloodthirsty patrons was Cesare Borgia. He employed Leonardo as his military architect and engineer for a couple of years during the early 1500s. Leonardo’s War Machines for Cesare Borgia would be both offensive and defensive, from the worlds first machine gun to huge drawbridges and impenetrable fortresses.
+    </p>
+</div>
+</div>
+<br><br>
+<figure>
+    <img class="monalisa3" src="./static/activity.jpg" alt="The landing gear">
+</figure>
+<div class="list">
+    <h1>THE TANK</h1>
+   <p>
+      It was designed to be driven straight onto a battlefield and to decimate the enemy with its 360 degree cannons. As always, Leonardo took inspiration from nature for his designs, the outer shell of the tank is based on a turtle's shell. 
+   </p>
+
+   <figure>
+    <img class="monalisa3" src="./static/crossbow.jpg" alt="The crossbow">
+</figure>
+<div class="list">
+    <h1>THE CROSSBOW</h1>
+   <p>
+       The giant crossbow invention is a great example of how the way Leonardo’s artwork really brought his ideas to life. Through his illustartions, an idea, however improbable, becomes realisitic and plausible. His vivid drawings of teh giant crossbow invention also make it clear the idea behind the impressive weapon was to testify enemies into fleeing rather than fighting.
+   </p>
+
+
+   <figure>
+    <img class="monalisa3" src="./static/gun_l.jpg" alt="The landing gear">
+</figure>
+<div class="list">
+    <h1>THE MACHINE GUN</h1>
+   <p>
+       The machine gun was yet another of Leonardo's deadly desings that never came to fruition, but it would have certainly destroyed many incoming enemy. Not quite the same as a modern machine gun. Da Vinci's "33-barelled-organ" allowed a set of 11 muskets to fire one after another, rotating to allow the barrels to cool off. 
+   </p>
+
+
+   <div class="inevntion">
+    <h1>ARCHITECTURAL INVENTIONS</h1>
+    <p>
+        Leonardo da Vinci was an artist who painted some of the most beautiful paintings of all times. He was also a man of science who took a logical approach to solving practical problems. These two sides of Leonardo da Vinci came together in his architectural drawings.3     His drawings give us an idea of the workings of a building, not just its outward appearance. 
+        <br><br>
+        His designs for buildings include magnificent castles, cathedrals, and chateaus. His sketches include details about important architectural elements like doors, windows, staircases, and walkways. Some of them even include out-of-the-ordinary features like a four-way staircase and a spiral staircase.
+    </p>
+    </div>
+
+    <br><br>
+   <figure>
+    <img class="monalisa4" src="./static/city.jpg" alt="architectural city">
+</figure>
+<div class="list">
+    <h1>THE IDEAL CITY</h1>
+   <p>
+    The Renaissance concept of the ideal city is mainly expressed by Leonardo in his rigorously geomtric urban planning. His ideal city is characterised by the perfect integrationof a netwok of canals , which are used both of commercial purpsoses as well as a sewage system. Leonardo concieved of building as hydraulic machines which distributed water in all of the rooms of the house as well as in te artisan workshops through a mechanical lifting system. In the workshops the energy released in this way was used to drive various types of machines.  
+   </p> 
+
+   <figure>
+    <img class="monalisa4" src="./static/knight.jpg" alt="robotic knight">
+</figure>
+<div class="list">
+    <h1>THE ROBOTIC KNIGHT</h1>
+   <p>
+       Designed for a pageant in Milan, the robotic knight consisted of a knight suit filled with geras and wheels taht were connected to an elaborate pulley and cable system. Through these mechanisms, da Vinci's robotic knights was capable of independent motion-siiting down, standing up, moving its head and lifitng his visor.
+   </p> 
+
+   <figure>
+    <img class="monalisa4" src="./static/cart.jpg" alt="self-propelled cart">
+</figure>
+<div class="list">
+    <h1>THE PROPELLED CART</h1>
+   <p>
+       Before motorised vehicles were a glimmer in someone's eye, Leonardo da Vinci designed a sel-propelled cart, capable of moving without being pushed. Among its other accomplishments, many consider Leonardo's self-propelled cart invention to be the world's first robot. 
+   </p> 
+<br><br>
+<div class="universal">
+    <h1>THE UNIVERSAL MAN</h1>
+    <p>
+        Many of us are good at some things, like math or science, or drawing, or writing. But Leonardo did so many things. It seems almost impossible that one person could have accomplished them all. How did he do it?
+        <br><br>
+        It may had something to do with the way his mind worked. The most heavenly gifts seemed to have showered on certain human beings. Sometimes supernaturally, marvellously, they all congregate in one individual. This was seen and acknowledged by all men in the case of Leonardo da Vinci, who had an indesirable grace in every effortless act and deed. His talent was so rare that he mastered any subject to which he turned his attention. 
+    </p>
+    <br><br>
+<div class="quote">
+    <p>
+        Leonardo was able to focus his mind entirely on the subject in front of him, but he was also open his mind and find connections between all of his studies. He used his whole brain: intuition and logic, imagination and observation. He trained his mind to study.  
+    </p>
+    <div class="dad">
+        <img src="./static/statue.jpg" alt="da vinci" >
+    </div>
+    
+    <p>
+        Before he went to sleep at night, Leonardo would go over everything he had worked on that day. he wrote in his notebooks, 'I have found that it is of no small benefit when you lie in bed in the dark to go over again in the imagination the outlines of the forms you have been studying; this is certainly praiseworthy exercise and useful in impressing on the memory.'
+    </p>
+</div>
+<br><br>
+<div class="facts">
+    <h1>QUICK FACTS</h1>
+    <p>
+<ul>
+    <li>Da Vinci's penchant for writing in reverse order or mirror image is mostly considered by many as his need to keep his works secret. It has been pointed out in some sources taht due to his left-handedness he could merely be using the, method of practical purposes as it was easier fro him to write it that way.</li>
+    <li>Guinness World Record lists Leonardo Da Vinci's Mona Lisa as having the highest insurance value for a painting in history. </li>
+    <li>Da Vinci's drawing of the Vitruvian Man is also regarded as a cultural icon. </li>
+    <li>There are records that the King Francis I, who shared a close friendship with the artist had held Da vinci's head in his arms as he deied on 2 May 1519 as Clos Luce, although this may be legend rather than a fact. </li>
+    <li>He was a gentle man who loved animals. He was a vegetarian- rare in his day. He sometimes brought live animals and let them go free.</li>
+    <li>He left several notebooks of his ideas. Bill Gates brought some of his notes for $30 million.</li>
+</ul>
+    </p>
+</div>
+</div>
+
+<div class="dad">
+    <iframe width="900" height="506" src="https://www.youtube.com/embed/zwGdnCNi8Ss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+  </body>
+</html>
